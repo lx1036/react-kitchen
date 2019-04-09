@@ -1,7 +1,17 @@
 import React from 'react';
+import {connect} from "react-redux";
+import {transmit} from "../redux/store";
 
-export class Header extends React.Component {
+class Header extends React.Component {
   render() {
-    return ();
+    return (
+      <div className="container">
+        <div>
+        
+        </div>
+      </div>
+    );
   }
 }
+
+export default connect(state => ({keyword: state}), {transmit})(Header);

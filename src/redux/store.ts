@@ -13,3 +13,7 @@ function reducer(state = 1, action: AnyAction) {
 }
 
 export const store = createStore(reducer);
+
+export const transmit = (data: any) => {
+  return {type: TRANSMIT, data: data};
+};
